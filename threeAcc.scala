@@ -3,7 +3,6 @@ package act_3
 class Account{
   var acc1=8000;
   var acc2 = 2000;
-  //var acc2=0;
   
   def transfer(trn:Double):Double={
     return acc1 - trn;
