@@ -2,10 +2,7 @@ package act_3
 
 class Substruct{
   
-  def sub(a:Double, b:Double):Double={
-    return a-b;
-  }
-  def sub3(x:Float, y:Float, z:Float):Float={
+  def sub(x:Float, y:Float, z:Float=0):Float={
     return (x-y)-z;
   }
 }
@@ -13,10 +10,9 @@ class Substruct{
 object twoSub {
   def main(args:Array[String]){
     var obj = new Substruct();
-    var obj3 = new Substruct();
     
     println(obj.sub(10,2));
-    println(obj3.sub3(3f/4,5f/8,2f/7));
+    println(obj.sub(3f/4,5f/8,2f/7));
     
     }
 }
